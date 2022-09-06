@@ -17,7 +17,7 @@ public final class ObjectBuilder {
         this.object = new JsonObject();
     }
 
-    public ObjectBuilder add(String key, JsonElement val) {
+    public ObjectBuilder add(String key, @Nullable JsonElement val) {
         getDirect().add(key, val);
         return this;
     }
